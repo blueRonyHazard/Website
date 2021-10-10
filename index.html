@@ -1,0 +1,49 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.min.css" />
+    <link
+      rel="shortcut icon"
+      href="images/me.png"
+      type="image/x-icon"
+    />
+    <title>Welcome</title>
+  </head>
+  <body>
+    <div id="terminal">
+      <div class="container">
+        <h1>
+          bluehazard:$ <span class="help">Website</span>
+        </h1>
+        <h2>type "help" for cmnds :)</h2>
+        <main>
+          <form id="command">
+            <span class="prompt">~/Users/bluehazard:$</span
+            ><input
+              type="text"
+              id="command-input"
+              autofocus
+              autocomplete="off"
+            />
+          </form>
+        </main>
+      </div>
+    </div>
+
+    <!--<a href="https://n.kavin.me" target="_blank"
+      ><button>Change View (Normal Website Mode)</button></a
+    >-->
+    <script src="js/contents.min.js"></script>
+    <script src="js/utils.min.js"></script>
+    <script src="js/main.min.js"></script>
+
+    <script>
+      document.getElementById("about-me").innerHTML = contents.about;
+      document.getElementById("education-content").innerHTML =
+        contents.education;
+      document.getElementById("skills-content").innerHTML = contents.skills;
+    </script>
+  </body>
+</html>
